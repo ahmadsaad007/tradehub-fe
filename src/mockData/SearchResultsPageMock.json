@@ -1,0 +1,23 @@
+[
+    {
+      "id": "1",
+      "title": "Vintage Lamp",
+      "price": 75,
+      "description": "A beautiful vintage lamp.",
+      "imageUrl": "https://example.com/lamp.jpg"
+    },
+    {
+      "id": "2",
+      "title": "Wooden Chair",
+      "price": 100,
+      "description": "Antique wooden chair.",
+      "imageUrl": "https://example.com/chair.jpg"
+    },
+    {
+      "id": "3",
+      "title": "Sofa",
+      "price": 300,
+      "description": "A modern sofa.",
+      "imageUrl": "https://example.com/sofa.jpg"
+    }
+  ]  

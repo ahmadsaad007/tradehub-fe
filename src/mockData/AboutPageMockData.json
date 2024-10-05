@@ -1,0 +1,28 @@
+{
+  "id": 1,
+  "name": "John Doe",
+  "email": "john.doe@example.com",
+  "address": "123 Vintage Lane, Antiquetown",
+  "phone": "555-555-5555",
+  "purchaseHistory": [
+    {
+      "itemId": 1,
+      "title": "Vintage Lamp",
+      "price": 75,
+      "purchaseDate": "2023-09-12"
+    },
+    {
+      "itemId": 3,
+      "title": "Sofa",
+      "price": 300,
+      "purchaseDate": "2023-08-05"
+    }
+  ],
+  "activeListings": [
+    {
+      "itemId": 2,
+      "title": "Wooden Chair",
+      "price": 100
+    }
+  ]
+}

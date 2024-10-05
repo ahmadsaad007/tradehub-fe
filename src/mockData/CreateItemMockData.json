@@ -1,0 +1,12 @@
+{
+    "name": "Item Name",
+    "description": "Item Description",
+    "price": 100.0,
+    "sellerUsername": "Seller123",
+    "imageUrls": ["https://example.com/image1.jpg", "https://example.com/image2.jpg"],
+    "listingAddress": "123 Main St",
+    "zip": "90210",
+    "categoryName": "Furniture",
+    "createdAt": "2024-10-02T12:34:56.789Z"
+}
+  
