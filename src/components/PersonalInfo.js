@@ -5,10 +5,14 @@ const PersonalInfo = () => {
   const [info, setInfo] = useState({ name: '', email: '', phone: '' });
   const [editMode, setEditMode] = useState(false);
 
+  // Retrieve username from localStorage (assuming it's stored there after login)
+  const username = localStorage.getItem('username');
+
   useEffect(() => {
     const fetchPersonalInfo = async () => {
       try {
-        const response = await axios.get('http://localhost:8080/user/info', {
+        // Make the GET request using the username
+        const response = await axios.get(`http://localhost:8080/profile/about/${username}`, {
           headers: { Authorization: `Bearer ${localStorage.getItem('authToken')}` },
         });
         setInfo(response.data);
@@ -18,11 +22,12 @@ const PersonalInfo = () => {
     };
 
     fetchPersonalInfo();
-  }, []);
+  }, [username]);
 
   const handleSave = async () => {
     try {
-      await axios.put('http://localhost:8080/user/update', info, {
+      // Make the PUT request to update user info
+      await axios.put(`http://localhost:8080/profile/update`, info, {
         headers: { Authorization: `Bearer ${localStorage.getItem('authToken')}` },
       });
       setEditMode(false);

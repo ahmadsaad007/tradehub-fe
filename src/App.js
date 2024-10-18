@@ -7,9 +7,6 @@ import SearchResultsPage from './pages/SearchResultsPage';  // Import search res
 import ItemDetailsPage from './pages/ItemDetailsPage';  // Import item details page
 import CreateListingPage from './pages/CreateListingPage';  // Import the Create Listing page
 import Navbar from './components/NavBar';
-import { setupMockAPI } from './mockAPI';  // Import mock API setup
-
-setupMockAPI();  // Initialize the mock API
 
 function App() {
   return (
